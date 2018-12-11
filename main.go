@@ -9,7 +9,7 @@ import (
 
 
 func main() {
-    boolPtr := flag.Bool("help", false, "single binary ip address show tool, made by giddy")
+    boolPtr := flag.Bool("help", false, "single binary ip address show tool, made by Egidijus. https://github.com/egidijus/showipaddress")
     flag.Parse()
     fmt.Println("help:", *boolPtr)
     ifaces, err := net.Interfaces()
