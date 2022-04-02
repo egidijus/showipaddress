@@ -43,100 +43,76 @@ build:
 	$(GOBUILD)/$(NAME)
 
 darwin-amd64:
-	mkdir -p $(BUILD_DIR)/$@
-	GOARCH=amd64 GOOS=darwin $(GOBUILD)/$@/$(NAME)
+	GOARCH=amd64 GOOS=darwin $(GOBUILD)/$(NAME)-$@
 
 darwin-arm64:
-	mkdir -p $(BUILD_DIR)/$@
-	GOARCH=arm64 GOOS=darwin $(GOBUILD)/$@/$(NAME)
+	GOARCH=arm64 GOOS=darwin $(GOBUILD)/$(NAME)-$@
 
 linux-386:
-	mkdir -p $(BUILD_DIR)/$@
-	GOARCH=386 GOOS=linux $(GOBUILD)/$@/$(NAME)
+	GOARCH=386 GOOS=linux $(GOBUILD)/$(NAME)-$@
 
 linux-amd64:
-	mkdir -p $(BUILD_DIR)/$@
-	GOARCH=amd64 GOOS=linux $(GOBUILD)/$@/$(NAME)
+	GOARCH=amd64 GOOS=linux $(GOBUILD)/$(NAME)-$@
 
 linux-arm:
-	mkdir -p $(BUILD_DIR)/$@
-	GOARCH=arm GOOS=linux $(GOBUILD)/$@/$(NAME)
+	GOARCH=arm GOOS=linux $(GOBUILD)/$(NAME)-$@
 
 linux-armv5:
-	mkdir -p $(BUILD_DIR)/$@
-	GOARCH=arm GOOS=linux GOARM=5 $(GOBUILD)/$@/$(NAME)
+	GOARCH=arm GOOS=linux GOARM=5 $(GOBUILD)/$(NAME)-$@
 
 linux-armv6:
-	mkdir -p $(BUILD_DIR)/$@
-	GOARCH=arm GOOS=linux GOARM=6 $(GOBUILD)/$@/$(NAME)
+	GOARCH=arm GOOS=linux GOARM=6 $(GOBUILD)/$(NAME)-$@
 
 linux-armv7:
-	mkdir -p $(BUILD_DIR)/$@
-	GOARCH=arm GOOS=linux GOARM=7 $(GOBUILD)/$@/$(NAME)
+	GOARCH=arm GOOS=linux GOARM=7 $(GOBUILD)/$(NAME)-$@
 
 linux-arm64:
-	mkdir -p $(BUILD_DIR)/$@
-	GOARCH=arm64 GOOS=linux $(GOBUILD)/$@/$(NAME)
+	GOARCH=arm64 GOOS=linux $(GOBUILD)/$(NAME)-$@
 
 linux-mips-softfloat:
-	mkdir -p $(BUILD_DIR)/$@
-	GOARCH=mips GOMIPS=softfloat GOOS=linux $(GOBUILD)/$@/$(NAME)
+	GOARCH=mips GOMIPS=softfloat GOOS=linux $(GOBUILD)/$(NAME)-$@
 
 linux-mips-hardfloat:
-	mkdir -p $(BUILD_DIR)/$@
-	GOARCH=mips GOMIPS=hardfloat GOOS=linux $(GOBUILD)/$@/$(NAME)
+	GOARCH=mips GOMIPS=hardfloat GOOS=linux $(GOBUILD)/$(NAME)-$@
 
 linux-mipsle-softfloat:
-	mkdir -p $(BUILD_DIR)/$@
-	GOARCH=mipsle GOMIPS=softfloat GOOS=linux $(GOBUILD)/$@/$(NAME)
+	GOARCH=mipsle GOMIPS=softfloat GOOS=linux $(GOBUILD)/$(NAME)-$@
 
 linux-mipsle-hardfloat:
-	mkdir -p $(BUILD_DIR)/$@
-	GOARCH=mipsle GOMIPS=hardfloat GOOS=linux $(GOBUILD)/$@/$(NAME)
+	GOARCH=mipsle GOMIPS=hardfloat GOOS=linux $(GOBUILD)/$(NAME)-$@
 
 linux-mips64:
-	mkdir -p $(BUILD_DIR)/$@
-	GOARCH=mips64 GOOS=linux $(GOBUILD)/$@/$(NAME)
+	GOARCH=mips64 GOOS=linux $(GOBUILD)/$(NAME)-$@
 
 linux-mips64le:
-	mkdir -p $(BUILD_DIR)/$@
-	GOARCH=mips64le GOOS=linux $(GOBUILD)/$@/$(NAME)
+	GOARCH=mips64le GOOS=linux $(GOBUILD)/$(NAME)-$@
 
 freebsd-386:
-	mkdir -p $(BUILD_DIR)/$@
-	GOARCH=386 GOOS=freebsd $(GOBUILD)/$@/$(NAME)
+	GOARCH=386 GOOS=freebsd $(GOBUILD)/$(NAME)-$@
 
 freebsd-amd64:
-	mkdir -p $(BUILD_DIR)/$@
-	GOARCH=amd64 GOOS=freebsd $(GOBUILD)/$@/$(NAME)
+	GOARCH=amd64 GOOS=freebsd $(GOBUILD)/$(NAME)-$@
 
 freebsd-arm64:
-	mkdir -p $(BUILD_DIR)/$@
-	GOARCH=arm64 GOOS=freebsd $(GOBUILD)/$@/$(NAME)
+	GOARCH=arm64 GOOS=freebsd $(GOBUILD)/$(NAME)-$@
 
 windows-386:
-	mkdir -p $(BUILD_DIR)/$@
-	GOARCH=386 GOOS=windows $(GOBUILD)/$@/$(NAME).exe
+	GOARCH=386 GOOS=windows $(GOBUILD)/$(NAME)-$@.exe
 
 windows-amd64:
-	mkdir -p $(BUILD_DIR)/$@
-	GOARCH=amd64 GOOS=windows $(GOBUILD)/$@/$(NAME).exe
+	GOARCH=amd64 GOOS=windows $(GOBUILD)/$(NAME)-$@.exe
 
 windows-arm:
-	mkdir -p $(BUILD_DIR)/$@
-	GOARCH=arm GOOS=windows $(GOBUILD)/$@/$(NAME).exe
+	GOARCH=arm GOOS=windows $(GOBUILD)/$(NAME)-$@.exe
 
 windows-armv6:
-	mkdir -p $(BUILD_DIR)/$@
-	GOARCH=arm GOOS=windows GOARM=6 $(GOBUILD)/$@/$(NAME).exe
+	GOARCH=arm GOOS=windows GOARM=6 $(GOBUILD)/$(NAME)-$@.exe
 
 windows-armv7:
-	mkdir -p $(BUILD_DIR)/$@
-	GOARCH=arm GOOS=windows GOARM=7 $(GOBUILD)/$@/$(NAME).exe
+	GOARCH=arm GOOS=windows GOARM=7 $(GOBUILD)/$(NAME)-$@.exe
 
 windows-arm64:
-	mkdir -p $(BUILD_DIR)/$@
-	GOARCH=arm64 GOOS=windows $(GOBUILD)/$@/$(NAME).exe
+	GOARCH=arm64 GOOS=windows $(GOBUILD)/$(NAME)-$@.exe
 
 
 
