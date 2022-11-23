@@ -16,8 +16,21 @@ download a release version or build your own with make
 
 ```make all```
 
+### How to install latest version
 
-simply run the binary produced
+### OSX
+
+```
+wget $(curl -sL https://api.github.com/repos/egidijus/showipaddress/releases/latest | jq -r '.assets[].browser_download_url' | grep -e darwin | grep amd64) -O ~/.local/bin/showipaddress
+chmod +x ~/.local/bin/showipaddress
+```
+
+### Linux
+
+```
+wget $(curl -sL https://api.github.com/repos/egidijus/showipaddress/releases/latest | jq -r '.assets[].browser_download_url' | grep -e linux | grep amd64) -O ~/.local/bin/showipaddress
+chmod +x ~/.local/bin/showipaddress
+```
 
 sample output
 
