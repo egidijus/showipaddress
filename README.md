@@ -12,7 +12,14 @@ one binary solution to see all IP addresses for:
 
 ## How?
 
-download a release version or build your own with make
+Download a release version or build your own with make
+
+### Go get/install
+```
+go install github.com/egidijus/showipaddress@latest
+```
+
+### Build
 
 ```make all```
 
